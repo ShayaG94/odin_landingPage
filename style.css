@@ -21,6 +21,7 @@ footer {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 68px;
 }
 
 .body div {
@@ -34,16 +35,18 @@ footer {
 }
 
 header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0px;
 }
 
 footer {
     color: #e5e7eb;
-    display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    bottom: 0px;
 }
 
 footer p {
@@ -59,6 +62,10 @@ footer p {
 #brahms {
     position: relative;
     left: -4px;
+}
+
+span#two {
+    font-size: 20px;
 }
 
 ul {
@@ -108,4 +115,19 @@ a {
     font-family: inherit;
     font-size: inherit;
     padding: 8px 16px;
+}
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.action div {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    margin: 0px 64px;
 }
