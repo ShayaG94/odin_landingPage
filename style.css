@@ -64,7 +64,7 @@ span#two {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 24px;
+    gap: 48px;
     padding: 0;
     margin: 0;
 }
@@ -81,6 +81,8 @@ a {
     color: #e5e7eb;
     font-size: 18px;
     align-items: center;
+    justify-content: space-between;
+    line-height: 1.5;
 }
 
 .main-info img {
@@ -92,6 +94,7 @@ a {
 
 .heading {
     flex-shrink: 3;
+    margin-right: 16px;
 }
 
 .heading h1 {
@@ -115,14 +118,35 @@ button {
     padding: 8px 16px;
     height: 50px;
 }
+
+button:hover {
+    background-color: #2f6fd6;
+    border-color: #3882f6;
+    cursor: pointer;
+}
+
 .quote {
     background-color: #e5e7eb;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #1f2937;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+blockquote {
     font-size: 36px;
     font-style: italic;
-    color: #1f2937;
+}
+
+figcaption {
+    align-self: flex-end;
+    font-weight: 700;
 }
 
 .action {
@@ -156,16 +180,24 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 300px;
+    width: auto;
 }
 
 .info h2 {
     color: #1f2937;
 }
 
+.frame {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
 .compositions {
     display: flex;
     justify-content: center;
-    gap: 10%;
+    align-items: center;
 }
 
 .genre {
@@ -175,8 +207,19 @@ button {
 }
 
 .genre img {
-    border: 2px solid #3882f6;
+    border: 2px solid #bcbec2;
     border-radius: 6px;
     width: 100px;
     height: 100px;
+    margin: 30px 30px 20px 30px;
+}
+
+.genre img:hover {
+    border-width: 4px;
+    cursor: pointer;
+    margin: 28px 28px 18px 28px;
+}
+
+.action button:hover {
+    border-color: #2558aa;
 }
