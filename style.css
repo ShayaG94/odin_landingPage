@@ -156,6 +156,8 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .action div {
@@ -171,6 +173,9 @@ figcaption {
 
 .action button {
     border-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .action span {
